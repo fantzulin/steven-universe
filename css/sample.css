@@ -1,0 +1,251 @@
+body{
+	background: #A8DADC;
+}
+.main{
+	width: 97%;
+	height: 100%;
+	position: relative;
+	margin-top: 2%;
+	margin-left: 2%;
+	background: #F1FAEE;
+	display: none;
+}
+.logo{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	top: 100px;
+	left: 540px;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 100%;
+	border-color: #E63946;
+	font-family:'Noto Sans', sans-serif;
+	text-align: center;
+	line-height: 300px;
+	font-size: 60px;
+	color: #E63946;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.logo:hover{
+	-webkit-transform: translate(0px,20px);
+	transform: translate(0px,20px);
+}
+.menubar{
+	position: fixed;
+	float: right;
+	top: 200px;
+	right:0px;
+	width: 200px;
+	height: 300px;
+	background: #457B9D;
+	z-index: 1;
+}
+.menubar ul{
+	position: relative;
+	list-style: none;
+}
+.menubar li{
+	position: relative;
+	width: 100px;
+	font-family:'Noto Sans', sans-serif;
+	line-height: 5;
+	cursor: pointer;
+	text-align: center;
+}
+.scroll1{
+	position: relative;
+	width: 100px;
+	height: 20px;
+	padding-top: 20%;
+	left: 650px;
+	font-family:'Noto Sans', sans-serif;
+	text-align: center;
+	color: #E63946;
+	
+}
+.section1 {
+	position: relative;
+	width: 100%;
+	height: 980px;
+	top: 200px;
+}
+.section1 p{
+	position: absolute;
+	top: 12%;
+	left: 5%;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 70px;
+	color: #1D3557;
+	z-index: 1;
+
+}
+.section1 hr{
+	position: absolute;
+	width: 140px;
+	top: 35.5%;
+	left: 5%;
+	border-color: #1D3557;
+	z-index: 1;
+}
+.section1 span{
+	position: absolute;
+	top: 34%;
+	left: 5%;
+	z-index: 1;
+	font-family:'Noto Sans', sans-serif;
+	color: #1D3557;
+
+} 
+.section1 #sea{
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	width: 50%;
+	height: auto;
+}
+.section2 {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	top: 0px;
+}
+.section2 .box{
+	position: absolute;
+	top: 250px;
+	left: 45px;
+	width: 450px;
+	height: 200px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #A8DADC;
+	text-align: center;
+	z-index: 1;
+}
+.section2 p{
+	position: relative;
+	top: 10%;
+	left: 5%;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 40px;
+	color: #1D3557;
+	z-index: 1;
+
+}
+.section2 hr{
+	position: relative;
+	margin-top: 0;
+	margin-left: 0;
+	top: -12px;
+	left: 20%;
+	width: 80px;
+	border-color: #1D3557;
+	z-index: 1;
+}
+.section2 span{
+	position: relative;
+	top:0px;
+	left: 15%;
+	font-family:'Noto Sans', sans-serif;
+	z-index: 1;
+	color: #1D3557;
+}
+.section2 #aquarium{
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	width: 50%;
+	height: auto;
+}
+.section2 #right{
+	position: absolute;
+	top: 87%;
+	left: 81%;
+	cursor: pointer;
+} 
+/*footer*/
+footer{
+	position: relative;
+	top: 2%;
+	left: 2%;
+	width: 100%;
+	height: 16px;
+	font-family:'Noto Sans', sans-serif;
+	font-style: italic;
+	color: #1D3557;
+}
+footer a{
+	text-decoration: none;
+	color: #457B9D;
+}
+/*桌機*/
+@media only screen and (min-width: 1025px){
+
+}
+
+/*手機*/
+@media only screen and (min-width : 285px) and (max-width : 480px){
+	.main{
+		width: 120%;
+	}
+	.logo{
+		top: 150px;
+		left: 40px;
+	}
+	.menubar{
+		display: none;
+	}
+	.scroll1{
+		padding-top: 80%;
+		left: 150px;
+	}
+	.section1{
+		height: 600px;
+	}
+	.section1 p{
+		font-size: 35px;
+	}
+	.section1 hr{
+		top: 30%;
+		width: 140px;
+	}
+	.section1 span{
+		top: 28%;
+	}
+	.section1 #sea{
+		top: 35%;
+		left: 5%;
+		width: 70%;
+	}
+	.section2{
+		height: 600px;
+	}
+	.section2 .box{
+		top:0;
+		left:-25%;
+		border-style:none;
+	}
+	.section2 p{
+		font-size: 35px;
+	}
+	.section2 hr{
+		top: 1px;
+		left: 25%;
+		width: 225px;
+	}
+	.section2 span{
+		top: ;
+		left:1%;
+	}
+	.section2 #aquarium{
+		top: 30%;
+		left: 5%;
+		width: 70%;
+	}
+	.section2 #right{
+		top: 51%;
+		left: 80%;
+	}
+}
