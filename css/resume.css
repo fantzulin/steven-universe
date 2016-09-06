@@ -7,11 +7,24 @@ body{
 	padding-right: 5%;
 	background-color: #373C38;
 }
-
+/*白線*/
+hr{
+	height: 1px;
+	background-color: white;
+}
 /*最上面*/
 header{
 	text-align: left;
 	display: block;
+}
+/*尾巴*/
+footer{
+	position: absolute;
+	height: 20px;
+	right: 0px;
+	bottom: -620px;
+	font-style: italic;
+	color: #91989F;
 }
 .photo{
 	position: relative;
@@ -53,8 +66,8 @@ header{
 	font-family:'Poiret One', cursive;
 	text-align: center;
 	display: block;
-	margin-top: 60px;
 	clear: both;
+	padding-top: 60px;
 	padding-left: 300px;
 }
 .skill{
@@ -82,8 +95,10 @@ header{
 	float: left;
 	padding-top: 60px;
 	padding-left: 300px;
+	padding-bottom: 20px;
 }
 .content{
+	position: relative;
 	display: block;
 	font-family: sans-serif;
 	color: white;
@@ -98,6 +113,7 @@ header{
 	color: #F7D94C;
 }
 .content2{
+	position: relative;
 	display: block;
 	font-family: sans-serif;
 	color: #91989F;
@@ -119,6 +135,7 @@ header{
 	line-height: 1.8;
 }
 .content3{
+	position: relative;
 	display: block;
 	font-family: sans-serif;
 	color: #91989F;
@@ -128,26 +145,13 @@ header{
 .content3 h2{
 	color: #F596AA;
 }
-.content3 h4{
-	color: white;
-}
-.content3 span{
-	color: #F7D94C;
-}
-.content3 p{
-	line-height: 1.8;
-}
 .content3 a{
 	position: relative;
 	left: 10px;
 	text-decoration:none;
-	color: white;
+	color: #F596AA;
 }
-/*白線*/
-hr{
-	height: 1px;
-	background-color: white;
-}
+
 /*桌機*/
 @media only screen and (min-width: 1025px) {
 /*最上面*/

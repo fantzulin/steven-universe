@@ -23,15 +23,15 @@ a:hover{
 }
 .resume{
 	position: relative;
-	float: ;
-	left:100px;
-	
+	float: left;
+	left: 580px;
 	font-size: 80px;
+	text-align: center;
 
 }
 .food{
 	position: relative;
-	top: 20px;
-	left:100px; 
+	top: 10px; 
+	left: 580px;
 	font-size: 30px;
 }
