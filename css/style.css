@@ -20,13 +20,18 @@ a:hover{
 	position: relative;
 	top: 10px;
 	font-family: 'Bungee Shade', cursive;
-	text-align: center;
 }
 .resume{
+	position: relative;
+	float: left;
+	left: 580px;
 	font-size: 80px;
-
+	text-align: center;
 
 }
 .food{
+	position: relative;
+	top: 10px; 
+	left: 580px;
 	font-size: 30px;
 }
