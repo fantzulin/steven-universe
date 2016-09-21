@@ -1,3 +1,63 @@
-body{
-	background: #FFFFFF;
+body {
+	background-color: #FDFFFC;
+}
+
+ul {
+	list-style: none;
+}
+
+nav {
+	text-align: center;
+}
+
+ul li {
+	display: inline;
+	font-size: 50px;
+	margin-right: 50px;
+}
+
+li a {
+	color: #011627;
+	text-decoration: none;
+}
+
+li a:active {
+	color: #2EC4B6;
+}
+
+li a:hover {
+	color: #E71D36;
+}
+
+article {
+	color: #011627;
+}
+
+section {
+	text-align: center;
+	float: left;
+	margin-left: 10%;
+	margin-right: 50px;
+}
+
+aside {
+	text-align: center;
+	margin-right: 10%;
+}
+
+aside h1 {
+	font-size: 40px;
+}
+
+aside p {
+	line-height: 24px;
+}
+
+aside img {
+	
+}
+
+footer {
+	height: 100px;
+	background-color: ;
 }
