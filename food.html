@@ -3,30 +3,108 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/food.css">
-	<title>food</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<title>Food</title>
 </head>
 <body>
+
 	<header>
-		<img src="img/logo.png" alt="logo">
+		<nav>
+			<img src="img/logo.png" alt="logo" id="logo">
+			<ul>
+				<li id="linka">Apple</li>
+				<li id="linkb">Banana</li>
+				<li id="linkc">Cherry</li>
+			</ul>
+		</nav>
 	</header>
-	<nav>
-		<ul>
-			<li><a href="#">suki家</a></li>
-			<li><a href="">絲路宴</a></li>
-			<li><a href="">ViVi</a></li>
-		</ul>
-	</nav>
-	<article>
-		<section>
-			<img src="img/food.jpg" alt="food">
-		</section>
-		<aside>
-			<h1>suki家</h1>
-			<h2>什麼什麼飯</h2>
-			<p>價位:NT$99<br>古亭店<br>地址:巴拉巴拉巴拉巴拉</p>
-			<img src="img/rank.png" alt="rank" width="128">
-		</aside>
-	</article>
-	<footer></footer>
+	<div class="container">
+		<div class="row-center" id="sectiona">
+			<div class="cols6">
+				<div class="imgbox">
+					<img src="https://unsplash.it/500" alt="img">
+				</div>
+			</div>
+			<div class="cols6">
+				<div class="imgbox">
+					<div class="imgtext">
+						<h1>Apple</h1>
+						<h2>This is Apple.</h2>
+							<div class="textparagraph">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestias eligendi quidem vero alias ea. Accusantium quas soluta recusandae, ducimus voluptates aut, assumenda earum velit, dignissimos beatae delectus voluptate, labore.</p>
+							</div>
+						<img src="img/rank.png" alt="rank">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-center" id="sectionb">
+			<div class="cols6">
+				<div class="imgbox">
+					<img src="https://unsplash.it/500/500" alt="img">
+				</div>
+			</div>
+			<div class="cols6">
+				<div class="imgbox">
+					<div class="imgtext">
+						<h1>Banana</h1>
+						<h2>This is Banana.</h2>
+							<div class="textparagraph">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestias eligendi quidem vero alias ea. Accusantium quas soluta recusandae, ducimus voluptates aut, assumenda earum velit, dignissimos beatae delectus voluptate, labore.</p>
+							</div>
+						<img src="img/rankb.png" alt="rank">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-center" id="sectionc">
+			<div class="cols6">
+				<div class="imgbox">
+					<img src="https://unsplash.it/500" alt="img">
+				</div>
+			</div>
+			<div class="cols6">
+				<div class="imgbox">
+					<div class="imgtext">
+						<h1>Cherry</h1>
+						<h2>This is Cherry.</h2>
+							<div class="textparagraph">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestias eligendi quidem vero alias ea. Accusantium quas soluta recusandae, ducimus voluptates aut, assumenda earum velit, dignissimos beatae delectus voluptate, labore.</p>
+							</div>
+						<img src="img/rankc.png" alt="rank">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="row">
+				<div class="coll12">
+					<hr>
+					<p>Copyright © My Website 2016</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+
+		$('#linkb').click(function(){
+			$('#sectiona').hide(100);
+			$('#sectionb').show(100);
+			$('#sectionc').hide(100);
+		});
+
+		$('#linkc').click(function(){
+			$('#sectiona').hide(100);
+			$('#sectionb').hide(100);
+			$('#sectionc').show(100);
+		});
+
+		$('#linka').click(function(){
+			$('#sectiona').show(100);
+			$('#sectionb').hide(100);
+			$('#sectionc').hide(100);
+		});
+	</script>
 </body>
 </html>
