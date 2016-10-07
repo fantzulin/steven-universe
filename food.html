@@ -89,19 +89,19 @@
 	<script>
 
 		$('#linkb').click(function(){
-			$('#sectiona').hide(100);
-			$('#sectionb').show(100);
-			$('#sectionc').hide(100);
+			$('#sectiona').css('display','none');
+			$('#sectionb').fadeIn(1000);
+			$('#sectionc').css('display','none');
 		});
 
 		$('#linkc').click(function(){
-			$('#sectiona').hide(100);
-			$('#sectionb').hide(100);
-			$('#sectionc').show(100);
+			$('#sectiona').css('display','none');
+			$('#sectionb').css('display','none');
+			$('#sectionc').fadeIn(1000);
 		});
 
 		$('#linka').click(function(){
-			$('#sectiona').show(100);
+			$('#sectiona').fadeIn(1000);
 			$('#sectionb').hide(100);
 			$('#sectionc').hide(100);
 		});
