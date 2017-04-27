@@ -1,0 +1,251 @@
+/*左邊把手*/
+.left:after {
+	position: absolute;
+	top: -5px;
+	width: 90%;
+	height: 50%;
+ 	background: #111;
+ 	border-radius: 60px 3px 0 0;
+  	content: '';
+  	z-index: -1;
+}
+.left{
+	position: relative;
+
+	width: 103px;
+	height: 316px;
+	border: transparent;
+	border-radius: 70px 0px 0px 70px;
+	background-color: #00CCE7;
+	display: inline-block;
+}
+.fa-minus{
+	position: absolute;
+	top: 17px;
+	left: 77px;
+	font-size: 22px;
+}
+.left .stick{
+	position: absolute;
+	top: 50px;
+	left: 28px;
+	width: 40px;
+	height: 40px;
+	border: #111 5px solid;
+	border-radius: 100%;
+	background-color: #333;
+}
+.left .sort0{
+	position: absolute;
+	top: 130px;
+	left: 43px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.left .sort90{
+	position: absolute;
+	top: 154px;
+	left: 68px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.left .sort180{
+	position: absolute;
+	top: 178px;
+	left: 43px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.left .sort270{
+	position: absolute;
+	top: 154px;
+	left: 17px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.left .capture{
+	position: absolute;
+	top: 216px;
+	left: 63px;
+	width: 19px;
+	height: 19px;
+	border: #444 1px solid;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 19px;
+	background-color: #333;
+}
+
+/*中間螢幕*/
+.middle:before{
+	position: absolute;
+	top: -5px;
+	left: 10%;
+	width: 15%;
+	height: 3px;
+ 	background: #111;
+ 	border-radius: 3px 3px 0 0;
+  	content: '';
+  	z-index: -1;
+}
+.middle:after{
+	position: absolute;
+	top: -5px;
+	left: 15%;
+	width: 5%;
+	height: 3px;
+ 	background: #fff;
+  	content: '';
+  	z-index: -1;
+}
+.middle{
+	position: relative;
+	margin-left: -5px;
+	width: 500px;
+	height: 315px;
+	display: inline-block;
+	background-color: #333;
+}
+.topleft{
+	position: absolute;
+	width: 6px;
+	height: 8px;
+	border: transparent;
+	border-radius: 0px 0px 8px 0px;
+	background-color: #fff;
+}
+.topright{
+	position: absolute;
+	right: 0px;
+	width: 6px;
+	height: 8px;
+	border: transparent;
+	border-radius: 0px 0px 0px 8px;
+	background-color: #fff;
+}
+
+/*右邊把手*/
+.right:after {
+	position: absolute;
+	top: -5px;
+	width: 90%;
+	height: 50%;
+ 	background: #111;
+ 	border-radius: 3px 60px 0 0;
+  	content: '';
+  	z-index: -1;
+}
+.right{
+	position: relative;
+	margin-left: -5px;
+	width: 103px;
+	height: 316px;
+	border: transparent;
+	border-radius: 0px 70px 70px 0px;
+	background: #FD5047;
+	display: inline-block;
+}
+.right .fa-plus{
+	position: absolute;
+	top: 18px;
+	left: 10px;
+	font-size: 22px;
+}
+.right .x{
+	position: absolute;
+	top: 41px;
+	left: 38px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.right .a{
+	position: absolute;
+	top: 64px;
+	left: 63px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.right .b{
+	position: absolute;
+	top: 88px;
+	left: 38px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.right .y{
+	position: absolute;
+	top: 64px;
+	left: 13px;
+	width: 23px;
+	height: 23px;
+	border: #444 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 23px;
+	background-color: #333;
+}
+.right .button span{
+	color: #fff;
+}
+.right .stick{
+	position: absolute;
+	top: 140px;
+	left: 28px;
+	width: 40px;
+	height: 40px;
+	border: #111 5px solid;
+	border-radius: 100%;
+	background-color: #333;
+}
+.right .home{
+	position: absolute;
+	top: 212px;
+	left: 22px;
+	width: 19px;
+	height: 19px;
+	border: #999 4px solid;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 19px;
+	background-color: #333;
+}
+object{
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}

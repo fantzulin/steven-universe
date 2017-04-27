@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 14px;
+	background:#fff;
+}
+/*
+@import url(http://fonts.googleapis.com/earlyaccess/mplus1p.css);
+body{
+	font-family: 'Mplus 1p', sans-serif;
+	font-size: 14px;
+	background:#fff;
+}
+*/
+a{
+	text-decoration: none;
+	color: #fff;
+}
+header{
+	width: 100%;
+	margin-bottom: 20px;
+	top: 0;
+	left: 0;
+	right: 0;	
+}
+nav{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 1170px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #222;
+	border-radius: 6px; 
+	border:0px solid transparent;
+}
+nav a{
+	color: #9d9d9d;
+	padding: 15px;
+}
+nav a:hover{
+	color: #fff;
+}
+hr{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: 1px solid #eee;
+}
+h1{
+	color: #fff;
+}
+h3{
+	margin-top: 24px;
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 500;
+}
+h3 small{
+	color: #247BA0;
+}
+h4{
+	color: #247BA0;
+}
+h4 small{
+	color: #000;
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 1170px;
+}
+.container a{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: #2e6da4;
+	border:1px solid transparent;
+	border-radius: 4px;
+}
+.jumbotron{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left:60px;
+	padding-right: 60px;
+	width: 1170px;
+	border-radius: 6px; 
+	border:0px solid transparent;
+	color: #fff;
+	background-image: url(https://unsplash.it/1300/400);
+}
+.jumbotron h1{
+	font-size: 63px;
+	font-weight: 500;
+}
+.jumbotron p{
+	font-size: 21px;
+	font-weight: 200;
+}
+.coll12{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.row-center{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.imgbox{
+	margin-bottom: 20px;
+	padding: 4px;
+	border:1px solid #ddd;
+	border-radius: 4px;
+}
+.imgbox img{
+	padding-right: 10px;
+	padding-bottom: 10px;
+	float: left;
+}
+.imgtext{
+	padding: 10px;
+}
+#sectionb{
+	display: none;
+	width: 930px;
+}
+#sectionb .imgbox{
+	height: 1800px;
+}
