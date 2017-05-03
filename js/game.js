@@ -27,10 +27,11 @@ game.States.preload = function(){
     	game.load.image('btn','assets/start-button.png');  //按钮
     	game.load.spritesheet('pipe','assets/pipes.png',54,320,2); //管道
     	game.load.bitmapFont('flappy_font', 'assets/fonts/flappyfont/flappyfont.png', 'assets/fonts/flappyfont/flappyfont.fnt');
-    	game.load.audio('fly_sound', 'assets/flap.wav');//飞翔的音效
+    	game.load.audio('bgm_sound','assets/bgm.mp3')
+    	game.load.audio('fly_sound', 'assets/flap.wav');//飛的音效
     	game.load.audio('score_sound', 'assets/score.wav');//得分的音效
-    	game.load.audio('hit_pipe_sound', 'assets/pipe-hit.wav'); //撞击管道的音效
-    	game.load.audio('hit_ground_sound', 'assets/ouch.wav'); //撞击地面的音效
+    	game.load.audio('hit_pipe_sound', 'assets/pipe-hit.wav'); //撞到的音效
+    	game.load.audio('hit_ground_sound', 'assets/ouch.wav'); //撞地板的音效
 
     	game.load.image('ready_text','assets/get-ready.png');
     	game.load.image('play_tip','assets/instructions.png');
@@ -80,6 +81,7 @@ game.States.play = function(){
 		this.soundScore = game.add.sound('score_sound');
 		this.soundHitPipe = game.add.sound('hit_pipe_sound');
 		this.soundHitGround = game.add.sound('hit_ground_sound');
+		this.soundBgm = game.add.sound('bgm_sound');
 		this.scoreText = game.add.bitmapText(game.world.centerX-20, 30, 'flappy_font', '0', 36);
 
 		this.readyText = game.add.image(game.width/2, 40, 'ready_text'); //get ready 文字
@@ -111,6 +113,7 @@ game.States.play = function(){
 		this.bird.body.gravity.y = 1000; //鳥的重力
 		this.readyText.destroy();
 		this.playTip.destroy();
+		this.soundBgm.play();
 		game.input.onDown.add(this.fly, this);
 		game.time.events.start();
 	}
@@ -146,6 +149,7 @@ game.States.play = function(){
 	this.gameOver = function(show_text){
 		this.gameIsOver = true;
 		this.stopGame();
+		this.soundBgm.stop();
 		if(show_text) this.showGameOverText();
 	};
 

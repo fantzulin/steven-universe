@@ -1,3 +1,10 @@
+body{
+	font-family: sans-serif;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
 /*左邊把手*/
 .left:after {
 	position: absolute;
