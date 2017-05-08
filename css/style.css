@@ -5,7 +5,7 @@ body{
 	max-width: 960px;
 	padding-left: 5%;
 	padding-right: 5%;
-	background-color: #373C38;
+	background-color: #FDFFFC;
 }
 /*白線*/
 hr{
@@ -41,16 +41,16 @@ footer{
 }
 /*介紹h1*/
 .profile h1{
-	color: #fff;
+	color: #91989F;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 24px;
 }
 .profile h2{
-	color: #fff;
+	color: #91989F;
 }
 .profile h3{
-	color: #F596AA;
+	color: #E71D36;
 	font-family:'Poiret One', cursive;
 	font-size: 16px;
 	font-weight: 600;
@@ -112,19 +112,19 @@ footer{
 	clear: both;
 }
 .content h2{
-	color: #F596AA;
+	color: #E71D36;
 }
 .content h4{
 	color: white;
 }
 .content span{
-	color: #F7D94C;
+	color: #FF9F1C;
 }
 .content p{
 	line-height: 1.8;
 }
 .content a{
-	color: #F596AA;
+	color: #E71D36;
 	text-decoration: none;
 }
 #campass{
