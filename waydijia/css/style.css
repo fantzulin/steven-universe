@@ -221,16 +221,6 @@ section{
 	top: -280px;
 	left: 140px;
 	background-image:url(../img/shop.png);
-	cursor: pointer;
-}
-.shop:hover{
-	position: relative;
-	width: 218px;
-	height: 215px;
-	top: -280px;
-	left: 140px;
-	background-image:url(../img/shoph.png);
-	cursor: pointer;
 }
 .cover{
 	position: relative;
@@ -248,4 +238,68 @@ section{
 	top: -415px;
 	left: 880px;
 	background: url(../img/hobbit0.png);
+}
+/*文字框內容*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+	margin: 50px auto;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.9);
+	border: 7px double #F596AA;
+	border-radius: 5px;
+	width: 60%;
+	height: 65%;
+	position: relative;
+	transition: all 3s ease-in-out;
+}
+
+
+.popup .content{
+}
+.content img {
+	margin-top: 10%;
+	margin-right: 20px;
+ 	float: left;
+}
+.popup .text{
+	padding-top: 15%;
+}
+.popup .text h1{
+	font-size: 18px;
+	font-weight: 700;
+}
+.popup .member{
+	float: left;
+	margin-right: 40px;
+}
+.popup .member .image{
+	cursor: pointer;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #999;
 }

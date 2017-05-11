@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>喂！底家</title>
 	<!--[if lt IE 9]>
@@ -24,29 +25,135 @@
 				</div>
 			</div>
 			<ul class="dropdown">
-				<li><a href=""><img src="img/item-1.png" alt="tiem-1"></a></li>
-				<li><a href=""><img src="img/item-2.png" alt="tiem-2"></a></li>
-				<li><a href=""><img src="img/item-3.png" alt="tiem-3"></a></li>
-				<li><a href=""><img src="img/item-4.png" alt="tiem-4"></a></li>
-				<li><a href=""><img src="img/item-5.png" alt="tiem-5"></a></li>
+				<li><a href="#popup1"><img src="img/item-1.png" alt="tiem-1"></a></li>
+				<li><a href="#popup2"><img src="img/item-2.png" alt="tiem-2"></a></li>
+				<li><a href="#popup3"><img src="img/item-3.png" alt="tiem-3"></a></li>
+				<li><a href="#popup4"><img src="img/item-4.png" alt="tiem-4"></a></li>
+				<li><a href="#popup5"><img src="img/item-5.png" alt="tiem-5"></a></li>
 				<li><a href=""><img src="img/item-6.png" alt="tiem-6"></a></li>
-				<li><a href=""><img src="img/item-7.png" alt="tiem-7"></a></li>
-				<li><a href=""><img src="img/item-8.png" alt="tiem-8"></a></li>
+				<li><a href="#popup7"><img src="img/item-7.png" alt="tiem-7"></a></li>
 			</ul>
 		</nav>
 		<div class="broadcast"></div>
 		<div class="work"></div>
-		<div class="teacher"></div>
-		<div class="board"></div>
-		<div class="life"></div>
-		<div class="ticket"></div>
-		<div class="paint"></div>
-		<div class="moto"></div>
+		<a href="#popup3"><div class="teacher"></div></a>
+		<a href="#popup1"><div class="board"></div></a>
+		<a href="#popup4"><div class="life"></div></a>
+		<a href="#popup5"><div class="ticket"></div></a>
+		<a href="#popup2"><div class="paint"></div></a>
+		<a href="javascript:playPause();"><div class="moto" id="music_btn2"></div></a>
 		<div class="shop"></div>
-		<div class="cover" onmouseover="showImg()" onmouseout="hideImg()" ></div>
+		<a href="#popup7"><div class="cover" onmouseover="showImg()" onmouseout="hideImg()" ></div></a>
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<div class="content">
+					<img src="img/pop-board.jpg" alt="image">
+					<a class="close" href="#">&times;</a>
+					<div class="text">
+						<p>
+							電影要夠吸引人，電影海報是很重要的一環。<br><br>
+							一開始出現電影海報繪製這個行業要歸功於陳子福先生，他從民國34年開始就時常在幫忙修復海報，他讓這個行業崛起，後來到了民國50年代越來越多畫師入行，手繪海報這個行業跟著當時的台語文藝片一起興盛。
+							<br><br>
+							直到民國69年，印刷產業憑著快速又廉價的優點讓眾多新型態的戲院捨棄手繪海報。到了現在，台灣南北各只剩下一位畫師，分別是桃園中源戲院謝森山老師及台南全美戲院顏振發老師。手繪電影海報在眾人眼裡已是無法再興盛的夕陽產業。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup2" class="overlay">
+			<div class="popup">
+				<div class="content">
+					<img src="img/pop-paint.png" alt="image">
+					<a class="close" href="#">&times;</a>
+					<div class="text">
+						<p>
+							早期手繪電影海報多使用美術專用漆，隨著產業落寞，美術專用漆早已停產，現在老師使用水性水泥漆作畫。水性水泥漆作畫時，若需要調適濃稠度，可直接加水調適，作畫時全憑自身經驗調色，不需對照色表，直接在油漆旁的木板上調色，顏料份量也憑著直覺調配多寡。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup3" class="overlay">
+			<div class="popup">
+				<div class="content">
+					<img src="img/pop-teacher.gif" alt="image" width="300">
+					<a class="close" href="#">&times;</a>
+					<div class="text">
+						<h1>謝森山</h1>
+						<p>
+							民國35年生(70歲)<br><br>
+						</p>
+						<p>
+							手繪電影海報資歷長達55年，現在大多使用青葉水泥漆替代早已不生產的專用美術漆，而今仍在替中源戲院繪製電影看板，甚至是親自去掛看板以及拆除的工作。謝森山老師也時常與文創和各大小型的活動合作，展覽自己的作品供大眾欣賞。未來也有意要開設手繪海報教室，讓老一輩們重溫更讓年輕學子認識關於手繪海報的種種。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup4" class="overlay">
+			<div class="popup">
+				<div class="content">
+					<div class="ui embed" data-source="youtube" data-id="O6Xo21L0ybE" data-placeholder="/images/image-16by9.png">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/VXJTT6KD3vQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<a class="close" href="#">&times;</a>
+				</div>
+			</div>
+		</div>
+		<div id="popup5" class="overlay">
+			<div class="popup">
+				<div class="content">
+					<div class="ui embed" data-source="youtube" data-id="O6Xo21L0ybE" data-placeholder="/images/image-16by9.png">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/jY6E4mjBT-Y" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<a class="close" href="#">&times;</a>
+				</div>
+			</div>
+		</div>
+		<div id="popup7" class="overlay">
+			<div class="popup">
+				<div class="content">
+					<div class="member">
+						<div class="ui small circular rotate reveal image">
+  							<img src="img/member01.png" class="visible content">
+  							<img src="img/member01h.png" class="hidden content">
+  						</div>
+  						<h3>邱巧妏</h3>
+  						<p>動畫、影片後製<br>紀錄片導演</p>	
+					</div>
+					<div class="member">
+						<div class="ui small circular rotate reveal image">
+  							<img src="img/member02.png" class="visible content">
+  							<img src="img/member02h.png" class="hidden content">
+  						</div>
+  						<h3>林思廷</h3>
+  						<p>美術設計、紀錄片攝影<br>錄音</p>
+					</div>
+  					<div class="member">
+  						<div class="ui small circular rotate reveal image">
+  							<img src="img/member03.png" class="visible content">
+  							<img src="img/member03h.png" class="hidden content">
+  						</div>
+  						<h3>張雯婷</h3>
+  						<p>美術設計、紀錄片攝影</p>
+  					</div>
+  					<div class="member">
+  						<div class="ui small circular rotate reveal image">
+  							<img src="img/member04.png" class="visible content">
+  							<img src="img/member04h.png" class="hidden content">
+  						</div>
+  						<h3>范慈霖</h3>
+  						<p>網站前端、網站互動<br>紀錄片攝影</p>
+  					</div>
+  					<a class="close" href="#">&times;</a>
+				</div>
+			</div>
+		</div>
+		<audio id="bgm" > <source src="bgm.wav" type="audio/wav" > </audio>
 	</section>
 	<footer></footer>
 	<script src='js/jquery.min.js'></script>
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 	<script src='js/jquery.js'></script>
 </body>
 </html>

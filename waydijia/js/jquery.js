@@ -25,3 +25,16 @@ function hideImg(){
     $('.cover').css("height",54)
     $('.cover').css("top",-415)
 }
+//播放背景音樂
+function playPause() { 
+    var music = document.getElementById('bgm'); 
+    var music_btn = document.getElementById('music_btn2'); 
+    if (music.paused){ 
+        music.play(); 
+        music_btn.src = 'img/play.gif'; 
+    } 
+    else{ 
+        music.pause(); 
+        music_btn.src = 'img/pause.png';  
+    } 
+}
