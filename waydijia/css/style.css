@@ -1,0 +1,251 @@
+body{
+	background: rgb(224,224,222);
+}
+nav{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	left: 10px;
+}
+/*hamberger 選單*/
+.menu{
+}
+.menu-group{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 10px;
+	cursor: pointer;
+}
+.menu-item{
+	width: 40px;
+	height: 2px;
+	background: #000;
+	margin: 0 0 7px;
+	display: block;
+}
+/*動態效果*/
+.menu-group.open .menu-item:first-child {
+	transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-group.open .menu-item:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-group.open .menu-item:nth-child(3) {
+	transform: rotate(-45deg) translate(7px, -6px);
+}
+.menu-item {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/*下拉選單*/
+.dropdown{
+	position: relative;
+	width: 400px;
+	left: 50px;
+	display: none;
+}
+
+.dropdown li{
+	position: relative;
+	margin-right: 10px;
+	list-style-type: none;
+	opacity: 0.8;
+	display: inline-flex;
+}
+.dropdown li:hover{
+	opacity: 1;
+}
+.dropdown a{
+	color: #fff;
+	text-decoration: none;
+}
+.dropdown a:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height:1px;
+	top: 40px;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+  	-webkit-transform: scaleX(0);
+ 	transform: scaleX(0);
+ 	-webkit-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+}
+ .dropdown a:hover:before{
+	visibility: visible;
+  	-webkit-transform: scaleX(0.8);
+}
+/*中間區塊*/
+section{
+	width: 1280px;
+	height: 880px;
+	margin: 0 auto;
+	background-image: url(../img/background.jpg);
+}
+/*招牌*/
+.broadcast{
+	position: relative;
+	width: 138px;
+	height: 145px;
+	top: 20px;
+	left: 910px;
+	background-image: url(../img/broadcast.gif);
+}
+.work{
+	position: relative;
+	width: 101px;
+	height: 37px;
+	top: 190px;
+	left: 1123px;
+	background-image: url(../img/work.png);
+	cursor: pointer;
+}
+.work:hover{
+	position: relative;
+	width: 101px;
+	height: 37px;
+	top: 190px;
+	left: 1123px;
+	background-image: url(../img/workh.png);
+}
+.teacher{
+	position: relative;
+	width: 112px;
+	height: 262px;
+	top: 200px;
+	left: 350px;
+	background-image: url(../img/teacher.png);
+	cursor: pointer;
+}
+.teacher:hover{
+	position: relative;
+	width: 112px;
+	height: 262px;
+	top: 200px;
+	left: 350px;
+	background-image: url(../img/teacherh.png);
+}
+.board{
+	position: relative;
+	width: 222px;
+	height: 77px;
+	top: -50px;
+	left: 533px;
+	background-image: url(../img/board.gif);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.board:hover{
+	position: relative;
+	width: 222px;
+	height: 77px;
+	top: -56px;
+	left: 527px;
+	background-image: url(../img/boardh.png);
+}
+.life{
+	position: relative;
+	width: 176px;
+	height: 32px;
+	top: -56px;
+	left: 1015px;
+	background-image:url(../img/life.png);
+	cursor: pointer;
+}
+.life:hover{
+	position: relative;
+	width: 176px;
+	height: 32px;
+	top: -56px;
+	left: 1015px;
+	background-image:url(../img/lifeh.png);
+	cursor: pointer;
+}
+.ticket{
+	position: relative;
+	width: 130px;
+	height: 105px;
+	top: -80px;
+	left: 747px;
+	background-image: url(../img/ticket.png);
+	cursor: pointer;
+}
+.ticket:hover{
+	position: relative;
+	width: 130px;
+	height: 105px;
+	top: -80px;
+	left: 747px;
+	background-image: url(../img/ticketh.png);
+}
+.paint{
+	position: relative;
+	width: 118px;
+	height: 36px;
+	top: -173px;
+	left: 125px;
+	background-image:url(../img/paint.png);
+	cursor: pointer;
+}
+.paint:hover{
+	position: relative;
+	width: 118px;
+	height: 36px;
+	top: -173px;
+	left: 125px;
+	background-image:url(../img/painth.png);
+}
+.moto{
+	position: relative;
+	width: 300px;
+	height: 185px;
+	top: -145px;
+	left: 500px;
+	background-image:url(../img/moto.png);
+	cursor: pointer;
+}
+.shop{
+	position: relative;
+	width: 218px;
+	height: 215px;
+	top: -280px;
+	left: 140px;
+	background-image:url(../img/shop.png);
+	cursor: pointer;
+}
+.shop:hover{
+	position: relative;
+	width: 218px;
+	height: 215px;
+	top: -280px;
+	left: 140px;
+	background-image:url(../img/shoph.png);
+	cursor: pointer;
+}
+.cover{
+	position: relative;
+	width: 180px;
+	height: 54px;
+	top: -415px;
+	left: 880px;
+	background-image:url(../img/cover.gif);
+	cursor: pointer;
+}
+.cover:hover{
+	position: relative;
+	width: 180px;
+	height: 150px;
+	top: -415px;
+	left: 880px;
+	background: url(../img/hobbit0.png);
+}
